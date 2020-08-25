@@ -1,1 +1,1 @@
-It Works!
+It Works! (at least in so far as any website that uses <object> really works). Anyway, this is the first file (graf-1.txt) that displays on this janky refernece page. When you edit graf-1.txt in your local repository, it will change the text that appears here. But before you change anything, make your own new branch to work in—generally speaking you'll never edit the default branch (somewhat problematically called "master").
