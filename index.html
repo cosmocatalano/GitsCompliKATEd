@@ -1,6 +1,7 @@
 <!-- Kate, don't edit this file-->
 <html>
 	<head>
+		<meta charset="UTF-8"/>
 		<title>
 		Git's CompliKATEd
 		</title>
@@ -11,15 +12,38 @@
 			//definitely don't edit this file here
 			let i = 1;
 			while(i < 11) {
+				//creating some objects
 				let objectTag = document.createElement("object");
 				objectTag.setAttribute("type", "text/plain");
 				objectTag.setAttribute("width", "100%");
 				objectTag.setAttribute("height", "100px");
 				objectTag.setAttribute("data", "text/graf-" + i +".txt");
+				objectTag.setAttribute("id", "object-" + i);
 				document.getElementById("target").appendChild(objectTag);
 				console.log("done this " + i + " times");
 				i++;
 			}
+			window.onload = function() {
+				//adding a header if those objects exist
+				let j = 0;
+				let lastOffset = 0;
+				let objects = document.getElementsByTagName("object");
+
+				for (object of objects) {
+					j++;
+					// console.log ("lastOffset for iteration " + j + " is " + lastOffset );
+					// console.log ("initial object.offsetTop for iteration " + j + " is " + object.offsetTop );
+					console.log("object.offsetHeight for iteration " + j  + " is " + object.offsetHeight);
+		 			if (object.offsetHeight > 99) {
+		 				let headerTag = document.createElement("h1");
+		 				let headerText = document.createTextNode("graf-"+j+".txt");
+		 				headerTag.appendChild(headerText);
+		  				document.getElementById("target").insertBefore(headerTag, object);
+		  				// lastOffset = object.offsetTop;
+		  				// console.log("just reset lastOffset to " + object.offsetTop);
+		 			}
+		 		}
+		 	}
 		</script>
 	</body>
 </html>
