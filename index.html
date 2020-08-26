@@ -39,18 +39,20 @@
 					objectTag.setAttribute(static, staticAttributes[static]);
 				}
 
-				//addint iterated attributes
+				//adding iterated attributes
 				for (iterated in iteratedAttributes) {
 					objectTag.setAttribute(iterated, iteratedAttributes[iterated]["pro"] + i + iteratedAttributes[iterated]["epi"]);
 				}
 
 				//inserting objects into the page
 				document.getElementById("target").appendChild(objectTag);
+
+				//turn crank
 				i++;
 
 			}
 
-			//make sure the object have content
+			//make sure the <object> elements have loaded
 			window.onload = function() {
 				let j = 1;
 
@@ -58,7 +60,7 @@
 				let objects = document.getElementsByTagName("object");
 				for (object of objects) {
 
-					// assumes objects less than 100px are empty
+					// assumes objects less than 100px tall are empty
 		 			if (object.offsetHeight > 99) {
 
 		 				//create header and add text 
@@ -66,11 +68,11 @@
 		 				let headerText = document.createTextNode("content from graf-"+j+".txt");
 		 				headerTag.appendChild(headerText);
 
-		 				//insert header
+		 				//insert header on top of to 100px elements
 		  				document.getElementById("target").insertBefore(headerTag, object);
 		 			}
 
-		 			//turn crank
+		 			//advance the counter
 		 			j++;
 		 		}
 		 	}
