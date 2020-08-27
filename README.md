@@ -3,7 +3,7 @@ This is a repo so that Kate can learn how Git works.
 
 ## why tho
 
-Becuase Git works for more than just code, and because I think it's useful for non-developers—particularly those who work closely with developers or write about technology—to get a better understanding of how this aspect of how software development works.
+Becuase Git works for more than just code, and because I think it's useful for non-developers—particularly those who work closely with developers or write about technology—to get a better understanding of how this aspect of software development works.
 
 ## so how
 
@@ -16,7 +16,7 @@ The technology involved is super-basic in the interests of
 - displaying a single product that results from smaller interacting peieces
 - not requiring the user to write any code.
 
-After cloing the repo, you'll have a copy of the code that runs that website on your local machine. You can view that local version of the website by opening `index.html`, and you can edit the text of `index.html` by modifying files in the `text` directory. You can also add new files so long as they match the pattern `graf-`[a number]`.txt`. 
+After cloing the repo, you'll have a copy of the code that runs that website on your local machine. You can view that local version of the website by opening `index.html`, and you can edit the text of `index.html` by modifying files in the `text` directory. You can also add new files so long as they match the pattern `graf-`[a number]`.txt` (and so long as [a number] is less than 10).
 
 ## ok but
 
