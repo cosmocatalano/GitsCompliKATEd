@@ -20,6 +20,6 @@ After cloing the repo, you'll have a copy of the code that runs that website on 
 
 ## ok but
 
-The idea is you could use this repo to create a branch, edit the `text` files to see how git recognizes changes and additions, and refresh `index.html` to see the impact of those local changes. You could also go through the process of commiting changes, publishing a branch to the remote, making a pull request to merge the branch back into the master, and see the changes live at http://cosmocatalano.com/lab/gitscomplikated/. 
+The idea is you could use this repo to create a branch, edit the files in the `text` folder to see how git recognizes changes and additions, and refresh `index.html` to see the impact of those local changes. You could also go through the process of commiting changes, publishing a branch to the remote, making a pull request to merge the branch back into the master, and see the changes live at http://cosmocatalano.com/lab/gitscomplikated/. 
 
 If you really wanted to get freaky, you could have multiple people making simultaneous to `text` files, conflicting edits and see what happens when you try to merge…
